@@ -1,5 +1,6 @@
-
 ![Customer Churn Prediction at SyriaTel](https://github.com/Shemnderitu/SyriaTel-Customer-Churn-Project/blob/master/images/Customer%20Churn%20Prediction%20at%20SyriaTel.png)
+
+Author: [Shem Nderitu](shemnderituh@gmail.com)
 
 # 📊 Customer Churn Prediction at SyriaTel
 
