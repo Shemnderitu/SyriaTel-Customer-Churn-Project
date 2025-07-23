@@ -2,18 +2,18 @@
 
 Author: [Shem Nderitu](mailto:shemnderituh@gmail.com)
 
-# 📊 Customer Churn Prediction at SyriaTel
+# **Customer Churn Prediction at SyriaTel**
 
-## 📌 Overview
+## 📌 **Overview**
 
 Customer churn represents one of the most significant challenges in the telecom industry. High churn rates lead to revenue loss and increase the costs associated with acquiring new customers. This project focuses on developing a predictive model that identifies customers likely to churn based on historical usage data and service interactions. With this model, SyriaTel can implement early intervention strategies to retain valuable customers and enhance service quality.
 
 ---
 
-## 🧠 Business and Data Understanding
+## 🧠 **Business Understanding**
 
 ### 🧪 Business Problem
-- SyriaTel wants to understand and reduce customer churn. The company needs a way to identify customers who are likely to leave so that appropriate interventions can be applied (e.g. loyalty programs, special offers).
+SyriaTel wants to understand and reduce customer churn. The company needs a way to identify customers who are likely to leave so that appropriate interventions can be applied (e.g. loyalty programs, special offers).
 
 ### 👥 Stakeholders
 
@@ -24,7 +24,7 @@ Customer churn represents one of the most significant challenges in the telecom 
 
 To minimize customer attrition by predicting churn risk and offering proactive solutions. Early identification allows the business to reduce churn, increase revenue stability, and improve customer lifetime value.
 
-### 📊 Data Understanding
+## 📊 **Data Understanding**
 
 The dataset in use was obtained from [kaggle](https://www.kaggle.com/datasets/becksddf/churn-in-telecoms-dataset?resource=download).
 The dataset contains 3,333 customer entries and 20+ features, including:
@@ -39,12 +39,13 @@ The data required preprocessing steps such as encoding categorical features, det
 
 ---
 
-## 🔍Exploratory Data Analysis
+## 🔍**Exploratory Data Analysis**
 
 ### 1. **Categorical Feature Distribution**
-![image](https://github.com/Shemnderitu/SyriaTel-Customer-Churn-Project/blob/master/images/image%206.png)
 
-First piechart shows international plan distribution, Second piechart shows voice mail plan distribution, Third piechart shows churn distribution.
+Pie charts below illustrate the proportion of customers for each category, highlighting the dominance of non-subscribers in both international and voicemail plans.  
+
+![image](https://github.com/Shemnderitu/SyriaTel-Customer-Churn-Project/blob/master/images/image%207.png)
 
 **Insights:**
 
@@ -53,6 +54,9 @@ First piechart shows international plan distribution, Second piechart shows voic
 - Churned customers represent a small minority, confirming a class imbalance issue.
 
 ### 2. **Churn Distribution by Plan Subscription**
+
+Grouped bar charts below show the proportion of churned and non-churned customers for each plan subscription type.
+
 ![image](https://github.com/Shemnderitu/SyriaTel-Customer-Churn-Project/blob/master/images/image%202.png)
 
 **Insights:**
@@ -61,7 +65,10 @@ First piechart shows international plan distribution, Second piechart shows voic
 
 - Customers with a voice mail plan exhibit a lower churn rate, possibly indicating higher engagement.
   
-### 3. **Correlation Heatmap & Redundancy Reduction**
+### 3. **Correlation Heatmap**
+
+The correlation heatmap below visualizes the relationships between all features, highlighting pairs with strong linear associations.
+
 ![image](https://github.com/Shemnderitu/SyriaTel-Customer-Churn-Project/blob/master/images/image%205.png)
 
 **Insights:**
@@ -72,7 +79,7 @@ First piechart shows international plan distribution, Second piechart shows voic
 
 ---
 
-## ⚙️ Modeling Approach
+## ⚙️ **Modeling Approach**
 
 Three models were built and compared:
 
@@ -97,7 +104,7 @@ Three models were built and compared:
 
 ---
 
-## 📊 Model Evaluation
+## 📊 **Model Evaluation**
 
 Each model was evaluated using:
 
@@ -119,13 +126,19 @@ Each model was evaluated using:
 - **Random Forest** achieved the best overall performance and highest AUC score.
 
 ### 📊 ROC Curve Comparison
+
+The ROC Curve Comparison helps visualize how well each model separates churners from non-churners across all classification thresholds.
+
 ![image](https://github.com/Shemnderitu/SyriaTel-Customer-Churn-Project/blob/master/images/image%203.png)
 
 - The closer the curve is to the top-left, the better. The Random Forest ROC curve dominates, confirming its superiority.
 
 ---
 
-## 🔍 Feature Importance Analysis
+## 🔍 **Feature Importance Analysis**
+
+The Feature Relevance highlights which factors most influence the model's churn predictions.
+
 ![image](https://github.com/Shemnderitu/SyriaTel-Customer-Churn-Project/blob/master/images/image%204.png)
 
 Using Random Forest, the following features emerged as key drivers of churn:
@@ -140,7 +153,7 @@ Using Random Forest, the following features emerged as key drivers of churn:
 
 ---
 
-## ✅ Conclusion
+## ✅ **Conclusion**
 
 - **Random Forest** is the most effective model due to its superior accuracy and discrimination ability.
 - **Logistic Regression** is still valuable for early flagging of churners, especially when computational simplicity is needed.
@@ -150,7 +163,7 @@ Together, the models provide actionable insights into who is likely to churn and
 
 ---
 
-## 📌 Business Recommendations
+## 📌 **Business Recommendations**
 
 - **Customer Service Optimization**: Prioritize support for users with frequent service calls.
 - **Plan Review**: Evaluate international plan costs and usability—frequent usage here links to high churn.
@@ -159,7 +172,7 @@ Together, the models provide actionable insights into who is likely to churn and
 
 ---
 
-## 🚀 Next Steps
+## 🚀 **Next Steps**
 
 - Deploy Random Forest model in SyriaTel’s CRM for real-time churn detection.
 - Build dashboards for churn alerts and team visibility.
